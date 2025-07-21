@@ -1,9 +1,11 @@
 PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
 
 📊 Project Overview
+
 This project aims to develop and evaluate machine learning models to predict patient survival from heart failure using clinical data. Leveraging techniques from data preprocessing, exploratory data analysis (EDA), and various classification algorithms, we identify key risk factors and present a robust predictive model to support early intervention and personalized healthcare.
 
 🎯 Objective
+
 To build and compare supervised machine learning models for predicting DEATH_EVENT in heart failure patients.
 
 To identify the most effective model and its performance metrics (Accuracy, F1-Score, ROC-AUC).
@@ -11,6 +13,7 @@ To identify the most effective model and its performance metrics (Accuracy, F1-S
 To extract insights into the most influential clinical features contributing to heart failure outcomes.
 
 💾 Dataset
+
 The project utilizes the Heart Failure Clinical Records Dataset, obtained from the UCI Machine Learning Repository.
 This dataset contains 299 patient records with 13 clinical features and a binary target variable (DEATH_EVENT).
 
@@ -29,6 +32,7 @@ other clinical indicators (anaemia, creatinine_phosphokinase, diabetes, high_blo
 DEATH_EVENT: (Target) Binary outcome (0 = No Death Event, 1 = Death Event)
 
 🛠️ Methodology
+
 The project workflow encompassed the following stages:
 
 Data Loading & Initial Inspection: Loaded heart_failure_clinical_records_dataset.csv and performed initial data quality checks.
@@ -58,6 +62,7 @@ Model Evaluation: Assessed model performance using accuracy, precision, recall, 
 Feature Importance Analysis: Determined the most impactful features for prediction using the best-performing model.
 
 ✨ Results & Findings
+
 Top Model: The Random Forest Classifier demonstrated superior performance compared to other models.
 
 Overall Accuracy: Approximately 84%
@@ -71,6 +76,7 @@ Performance Note: While overall accuracy was high, the model's recall for DEATH_
 A detailed analysis, including model performance comparisons and visualizations, can be found in classification.ipynb and summarized in final.pptx.
 
 🚀 How to Run Locally
+
 To replicate and explore this project:
 
 Clone the Repository:
@@ -93,6 +99,7 @@ jupyter notebook classification.ipynb
 This will open the Jupyter interface in your browser, where you can run the analysis.
 
 💻 Technologies Used
+
 Python 3.x
 
 Jupyter Notebook
@@ -100,6 +107,7 @@ Jupyter Notebook
 Key Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
 
 👥 Contributors
+
 Akshay J P
 
 Fahad Muhammed M
