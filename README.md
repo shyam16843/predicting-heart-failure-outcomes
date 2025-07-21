@@ -1,4 +1,5 @@
-REDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
+PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
+
 📊 Project Overview
 This project aims to develop and evaluate machine learning models to predict patient survival from heart failure using clinical data. Leveraging techniques from data preprocessing, exploratory data analysis (EDA), and various classification algorithms, we identify key risk factors and present a robust predictive model to support early intervention and personalized healthcare.
 
