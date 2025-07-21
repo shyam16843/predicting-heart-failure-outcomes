@@ -82,6 +82,7 @@ To replicate and explore this project:
 Clone the Repository:
 
 Bash
+
 git clone https://github.com/shyam16843/predicting-heart-failure-outcomes.git
 cd predicting-heart-failure-outcomes
 
@@ -90,11 +91,13 @@ Install Dependencies:
 It's highly recommended to use a virtual environment.
 
 Bash
+
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
 Launch Jupyter Notebook:
 
 Bash
+
 jupyter notebook classification.ipynb
 This will open the Jupyter interface in your browser, where you can run the analysis.
 
