@@ -57,8 +57,9 @@ git clone https://github.com/shyam16843/predicting-heart-failure-outcomes.git
 cd predicting-heart-failure-outcomes
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate  
 pip install -r requirements.txt
-jupyter notebook classification.ipynb
+jupyter notebook classification.ipynb ```
 
 ## 💻 Technologies  
 
