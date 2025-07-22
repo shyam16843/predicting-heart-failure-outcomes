@@ -1,4 +1,4 @@
-
+\# PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
 
 
 
@@ -20,7 +20,7 @@ Machine learning system predicting heart failure survival with \*\*84% accuracy\
 
 \## 💾 Dataset
 
-\*\*Source:\*\* \[UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)  
+📂 \[UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)    
 
 \*\*Records:\*\* 299 patients | \*\*Features:\*\* 13 clinical indicators  
 
@@ -138,25 +138,21 @@ pip install -r requirements.txt
 
 jupyter notebook classification.ipynb
 
-
-
 💻 Technologies
 
-\## 💻 Technologies  
+🖥️ Python 3.8+ |
 
-\[🖥️ Python 3.8+](https://www.python.org) | 
+📦 Pandas |
 
-\[📦 Pandas](https://pandas.pydata.org) | 
+🧮 NumPy |
 
-\[🧮 NumPy](https://numpy.org) |  
+📊 Matplotlib |
 
-\[📊 Matplotlib](https://matplotlib.org) | 
+🎨 Seaborn |
 
-\[🎨 Seaborn](https://seaborn.pydata.org) |  
+🔬 Scikit-learn |
 
-\[🔬 Scikit-learn](https://scikit-learn.org) | 
-
-\[📓 Jupyter](https://jupyter.org)
+📓 Jupyter
 
 
 
