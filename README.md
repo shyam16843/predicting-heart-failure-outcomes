@@ -1,3 +1,4 @@
+
 # PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
 
 ## 📊 Project Overview
@@ -9,19 +10,18 @@ Machine learning system predicting heart failure survival with **84% accuracy** 
 - Identify top clinical risk factors
 
 ## 💾 Dataset
-📂 [UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)  
+**Source:** [UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)  
 **Records:** 299 patients | **Features:** 13 clinical indicators  
 
 **Key Features:**  
 `age` • `ejection_fraction` • `serum_creatinine` • `time` • `anaemia`
 
 ## 🛠️ Methodology
-```mermaid
-graph TD
-    A[Data Cleaning] --> B[EDA]
-    B --> C[Feature Engineering]
-    C --> D[Model Training]
-    D --> E[Performance Evaluation]
+1. Data Cleaning → EDA
+2. EDA → Feature Engineering
+3. Feature Engineering → Model Training
+4. Model Training → Performance Evaluation
+
 🤖 Models Implemented
 Traditional ML:
 Random Forest (Best: 84% Accuracy)
@@ -68,8 +68,15 @@ python -m venv venv
 source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 jupyter notebook classification.ipynb
+
 💻 Technologies
-🖥️ Python 3.8+ | 📦 Pandas | 🧮 NumPy | 📊 Matplotlib | 🎨 Seaborn | 🔬 Scikit-learn | 📓 Jupyter
+🖥️ Python 3.8+ |
+📦 Pandas |
+🧮 NumPy |
+📊 Matplotlib |
+🎨 Seaborn |
+🔬 Scikit-learn |
+📓 Jupyter
 
 🔮 Future Work
 Class Imbalance - SMOTE/ADASYN
