@@ -22,46 +22,37 @@ Machine learning system predicting heart failure survival with **84% accuracy** 
 3. Feature Engineering → Model Training
 4. Model Training → Performance Evaluation
 
-🤖 Models Implemented
-Traditional ML:
-Random Forest (Best: 84% Accuracy)
+## 🤖 Models Implemented
+### Traditional ML:
+- Random Forest (Best: 84% Accuracy)
+- Logistic Regression
+- SVM
+- K-Nearest Neighbors
+- Decision Trees
+- Gaussian Naive Bayes
+- LDA
 
-Logistic Regression
+### Deep Learning:
+- Neural Network (3-layer MLP)
+- RNN (Experimental)
+- CNN (Future Work)
 
-SVM
+## ✨ Results
+### Performance Comparison
+| Model              | Accuracy | ROC-AUC | Recall |
+|--------------------|----------|---------|--------|
+| Random Forest      | 84%      | 0.891   | 63%    |
+| Logistic Regression| 82%      | 0.865   | 61%    |
+| SVM                | 81%      | 0.852   | 59%    |
+| Neural Network     | 79%      | 0.831   | 57%    |
 
-K-Nearest Neighbors
+**Top 3 Predictors:**  
+1. Ejection Fraction (27%)  
+2. Serum Creatinine (22%)  
+3. Age (19%)
 
-Decision Trees
-
-Gaussian Naive Bayes
-
-LDA
-
-Deep Learning:
-Neural Network (3-layer MLP)
-
-RNN (Experimental)
-
-CNN (Future Work)
-
-✨ Results
-Performance Comparison
-Model	Accuracy	ROC-AUC	Recall
-Random Forest	84%	0.891	63%
-Logistic Regression	82%	0.865	61%
-SVM	81%	0.852	59%
-Neural Network	79%	0.831	57%
-Top 3 Predictors:
-
-Ejection Fraction (27%)
-
-Serum Creatinine (22%)
-
-Age (19%)
-
-🚀 Installation
-bash
+## 🚀 Installation
+```bash
 git clone https://github.com/shyam16843/predicting-heart-failure-outcomes.git
 cd predicting-heart-failure-outcomes
 python -m venv venv
@@ -69,16 +60,18 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 jupyter notebook classification.ipynb
 
-💻 Technologies
-🖥️ Python 3.8+ |
-📦 Pandas |
-🧮 NumPy |
-📊 Matplotlib |
-🎨 Seaborn |
-🔬 Scikit-learn |
-📓 Jupyter
+## 💻 Technologies  
+
+[🖥️ Python 3.8+](https://www.python.org) | 
+[📦 Pandas](https://pandas.pydata.org) | 
+[🧮 NumPy](https://numpy.org) |  
+[📊 Matplotlib](https://matplotlib.org) | 
+[🎨 Seaborn](https://seaborn.pydata.org) |  
+[🔬 Scikit-learn](https://scikit-learn.org) | 
+[📓 Jupyter](https://jupyter.org)
 
 🔮 Future Work
+
 Class Imbalance - SMOTE/ADASYN
 
 Model Tuning - Bayesian Optimization
