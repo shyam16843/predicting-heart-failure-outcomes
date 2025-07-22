@@ -1,123 +1,160 @@
-PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
+\# PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
 
-📊 Project Overview
 
-This project aims to develop and evaluate machine learning models to predict patient survival from heart failure using clinical data. Leveraging techniques from data preprocessing, exploratory data analysis (EDA), and various classification algorithms, we identify key risk factors and present a robust predictive model to support early intervention and personalized healthcare.
 
-🎯 Objective
+\## 📊 Project Overview
 
-To build and compare supervised machine learning models for predicting DEATH_EVENT in heart failure patients.
+Machine learning system that predicts patient survival from heart failure with \*\*84% accuracy\*\* using clinical data. Identifies key risk factors through comprehensive EDA and model interpretation.
 
-To identify the most effective model and its performance metrics (Accuracy, F1-Score, ROC-AUC).
 
-To extract insights into the most influential clinical features contributing to heart failure outcomes.
 
-💾 Dataset
+\## 🎯 Objective
 
-The project utilizes the Heart Failure Clinical Records Dataset, obtained from the UCI Machine Learning Repository.
-This dataset contains 299 patient records with 13 clinical features and a binary target variable (DEATH_EVENT).
+\- Predict `DEATH\_EVENT` occurrence
 
-Key Features:
+\- Compare 7 classification models
 
-age: Patient's age (years)
+\- Identify top clinical risk factors
 
-ejection_fraction: Percentage of blood leaving the heart at each contraction (%)
 
-serum_creatinine: Level of serum creatinine in the blood (mg/dL)
 
-time: Follow-up period (days)
+\## 💾 Dataset
 
-other clinical indicators (anaemia, creatinine_phosphokinase, diabetes, high_blood_pressure, platelets, serum_sodium, sex, smoking).
+\*\*Source:\*\* 📂 \[UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records) 
 
-DEATH_EVENT: (Target) Binary outcome (0 = No Death Event, 1 = Death Event)
+\*\*Records:\*\* 299 patients | \*\*Features:\*\* 13 clinical indicators  
 
-🛠️ Methodology
 
-The project workflow encompassed the following stages:
 
-Data Loading & Initial Inspection: Loaded heart_failure_clinical_records_dataset.csv and performed initial data quality checks.
+\*\*Key Features:\*\*  
 
-Exploratory Data Analysis (EDA): Visualized feature distributions, correlations, and relationships with the target variable to gain insights.
+`age` • `ejection\_fraction` • `serum\_creatinine` • `time` • `anaemia`
 
-Data Preprocessing: Handled scaling of numerical features and split data into training and testing sets.
 
-Model Development: Implemented and trained various classification models, including:
 
-Logistic Regression
+\## 🛠️ Methodology
 
-K-Nearest Neighbors (KNN)
+```mermaid
 
-Decision Tree
+graph TD
 
-Random Forest (Best Performer)
+&nbsp;   A\[Data Cleaning] --> B\[EDA]
 
-Support Vector Machine (SVM)
+&nbsp;   B --> C\[Feature Engineering]
 
-Gaussian Naive Bayes
+&nbsp;   C --> D\[Model Training]
 
-Linear Discriminant Analysis (LDA)
+&nbsp;   D --> E\[Performance Evaluation]
 
-Model Evaluation: Assessed model performance using accuracy, precision, recall, F1-score, and ROC-AUC metrics, reinforced by Stratified K-Fold Cross-Validation.
+✨ Results
 
-Feature Importance Analysis: Determined the most impactful features for prediction using the best-performing model.
+Model Performance (Random Forest)
 
-✨ Results & Findings
+Metric	Score
 
-Top Model: The Random Forest Classifier demonstrated superior performance compared to other models.
+Accuracy	84%
 
-Overall Accuracy: Approximately 84%
+ROC-AUC	0.891
 
-ROC-AUC Score: 89.15% (indicating strong discriminative power)
+Recall	63%
 
-Key Predictors: ejection_fraction, serum_creatinine, and age were identified as the most significant features influencing heart failure outcomes.
+Top 3 Predictors:
 
-Performance Note: While overall accuracy was high, the model's recall for DEATH_EVENT (positive class) was lower (~63%), suggesting a need for further optimization on imbalanced data.
 
-A detailed analysis, including model performance comparisons and visualizations, can be found in classification.ipynb and summarized in final.pptx.
 
-🚀 How to Run Locally
+Ejection Fraction (27% importance)
 
-To replicate and explore this project:
 
-Clone the Repository:
 
-Bash
+Serum Creatinine (22% importance)
+
+
+
+Age (19% importance)
+
+
+
+🚀 Installation
+
+Clone repository:
+
+
+
+bash
 
 git clone https://github.com/shyam16843/predicting-heart-failure-outcomes.git
 
 cd predicting-heart-failure-outcomes
 
+Create virtual environment:
 
-Install Dependencies:
-It's highly recommended to use a virtual environment.
 
-Bash
 
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+bash
 
-Launch Jupyter Notebook:
+python -m venv venv
 
-Bash
+source venv/bin/activate  # Linux/Mac
+
+\# OR
+
+venv\\Scripts\\activate  # Windows
+
+Install dependencies:
+
+
+
+bash
+
+pip install -r requirements.txt
+
+Run Jupyter Notebook:
+
+
+
+bash
 
 jupyter notebook classification.ipynb
-This will open the Jupyter interface in your browser, where you can run the analysis.
 
-💻 Technologies Used
+💻 Technologies
 
-Python 3.x
+🖥️ Python 3.8+ |
 
-Jupyter Notebook
+📦 Pandas |
 
-Key Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+🧮 NumPy |
 
-👥 Contributors
+📊 Matplotlib |
 
-Akshay J P
+🎨 Seaborn |
 
-Fahad Muhammed M
+🔬 Scikit-learn |
 
-Ghanashyam T V
+📓 Jupyter
 
-Jibin K
 
-Mohammed Fahim P
+
+🔮 Future Work
+
+Class Imbalance Solutions
+
+
+
+Implement SMOTE/ADASYN techniques
+
+
+
+Model Optimization
+
+
+
+Bayesian hyperparameter tuning
+
+
+
+Clinical Integration
+
+
+
+Develop Flask API endpoint
+
