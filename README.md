@@ -1,10 +1,10 @@
-\# PREDICTING HEART FAILURE OUTCOMES USING MACHINE LEARNING
+
 
 
 
 \## 📊 Project Overview
 
-Machine learning system that predicts patient survival from heart failure with \*\*84% accuracy\*\* using clinical data. Identifies key risk factors through comprehensive EDA and model interpretation.
+Machine learning system predicting heart failure survival with \*\*84% accuracy\*\* using clinical data. Identifies key risk factors through comprehensive analysis.
 
 
 
@@ -12,7 +12,7 @@ Machine learning system that predicts patient survival from heart failure with \
 
 \- Predict `DEATH\_EVENT` occurrence
 
-\- Compare 7 classification models
+\- Compare multiple classification models
 
 \- Identify top clinical risk factors
 
@@ -20,7 +20,7 @@ Machine learning system that predicts patient survival from heart failure with \
 
 \## 💾 Dataset
 
-\*\*Source:\*\* 📂 \[UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records) 
+\*\*Source:\*\* \[UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/ml/datasets/Heart+failure+clinical+records)  
 
 \*\*Records:\*\* 299 patients | \*\*Features:\*\* 13 clinical indicators  
 
@@ -46,39 +46,83 @@ graph TD
 
 &nbsp;   D --> E\[Performance Evaluation]
 
+🤖 Models Implemented
+
+Traditional ML:
+
+Random Forest (Best: 84% Accuracy)
+
+
+
+Logistic Regression
+
+
+
+SVM
+
+
+
+K-Nearest Neighbors
+
+
+
+Decision Trees
+
+
+
+Gaussian Naive Bayes
+
+
+
+LDA
+
+
+
+Deep Learning:
+
+Neural Network (3-layer MLP)
+
+
+
+RNN (Experimental)
+
+
+
+CNN (Future Work)
+
+
+
 ✨ Results
 
-Model Performance (Random Forest)
+Performance Comparison
 
-Metric	Score
+Model	Accuracy	ROC-AUC	Recall
 
-Accuracy	84%
+Random Forest	84%	0.891	63%
 
-ROC-AUC	0.891
+Logistic Regression	82%	0.865	61%
 
-Recall	63%
+SVM	81%	0.852	59%
+
+Neural Network	79%	0.831	57%
 
 Top 3 Predictors:
 
 
 
-Ejection Fraction (27% importance)
+Ejection Fraction (27%)
 
 
 
-Serum Creatinine (22% importance)
+Serum Creatinine (22%)
 
 
 
-Age (19% importance)
+Age (19%)
 
 
 
 🚀 Installation
-
-Clone repository:
-
-
 
 bash
 
@@ -86,75 +130,49 @@ git clone https://github.com/shyam16843/predicting-heart-failure-outcomes.git
 
 cd predicting-heart-failure-outcomes
 
-Create virtual environment:
-
-
-
-bash
-
 python -m venv venv
 
 source venv/bin/activate  # Linux/Mac
 
-\# OR
-
-venv\\Scripts\\activate  # Windows
-
-Install dependencies:
-
-
-
-bash
-
 pip install -r requirements.txt
-
-Run Jupyter Notebook:
-
-
-
-bash
 
 jupyter notebook classification.ipynb
 
+
+
 💻 Technologies
 
-🖥️ Python 3.8+ |
+\## 💻 Technologies  
 
-📦 Pandas |
+\[🖥️ Python 3.8+](https://www.python.org) | 
 
-🧮 NumPy |
+\[📦 Pandas](https://pandas.pydata.org) | 
 
-📊 Matplotlib |
+\[🧮 NumPy](https://numpy.org) |  
 
-🎨 Seaborn |
+\[📊 Matplotlib](https://matplotlib.org) | 
 
-🔬 Scikit-learn |
+\[🎨 Seaborn](https://seaborn.pydata.org) |  
 
-📓 Jupyter
+\[🔬 Scikit-learn](https://scikit-learn.org) | 
+
+\[📓 Jupyter](https://jupyter.org)
 
 
 
 🔮 Future Work
 
-Class Imbalance Solutions
+Class Imbalance - SMOTE/ADASYN
 
 
 
-Implement SMOTE/ADASYN techniques
+Model Tuning - Bayesian Optimization
 
 
 
-Model Optimization
+Deployment - Flask API
 
 
 
-Bayesian hyperparameter tuning
-
-
-
-Clinical Integration
-
-
-
-Develop Flask API endpoint
+Advanced Models - Transformers
 
